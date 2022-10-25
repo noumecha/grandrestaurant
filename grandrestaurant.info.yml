@@ -4,4 +4,4 @@ description: Provides additional functionality for the site.
 package: Custom
 core_version_requirement: ^8 || ^9 || ^10
 dependencies:
-  - formatages_models
+  - formatage_models
