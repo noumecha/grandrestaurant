@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\mit_models\Plugin\Layout\Sections;
+namespace Drupal\grandrestaurant\Plugin\Layout\Sections;
 
 use Drupal\bootstrap_styles\StylesGroup\StylesGroupManager;
 use Drupal\formatage_models\FormatageModelsThemes;
@@ -15,7 +15,7 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *   category = @Translation("grandrestaurant"),
  *   path = "layouts/sections",
  *   template = "grandrestaurant_hero_section",
- *   library = "mit_models/grandrestaurant_hero_section",
+ *   library = "grandrestaurant/grandrestaurant_hero_section",
  *   default_region = "hero_subtitle",
  *   regions = {
  *     "hero_subtitle" = {
