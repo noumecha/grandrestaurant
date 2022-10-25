@@ -1,0 +1,42 @@
+{% if content %}
+    {% if content.hero_bg_image.layout_builder_add_block %}
+		{{ content.hero_bg_image }}
+	{% endif %}
+	{% if content.hero_bg_image|layout_bg_img %}
+		{% set attributes = attributes.merge(content.hero_bg_image|layout_bg_img) %}
+	{% endif %}
+<div {{ attributes.addClass('grandrestaurant-hero')}}>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="grandrestaurant-hero__subtitle_cont">
+                    {% if content.hero_subtitle %}
+                    <h2 {{ region_attributes.hero_subtitle.addClass(['grandrestaurant-hero__subtitle','h2'])}}>
+                        {{ content.hero_subtitle }}
+                    </h2>
+                    {% endif %}
+                </div>
+                <div class="grandrestaurant-hero__subtitle_cont">
+                    {% if content.hero_title %}
+                    <h1 {{ region_attributes.hero_title.addClass(['grandrestaurant-hero__title','h1'])}}>
+                        {{ content.hero_title }}
+                    </h1>
+                    {% endif %}
+                </div>
+                <div class="grandrestaurant-hero__subtitle_cont">
+                    {% if content.hero_description %}
+                    <div {{ region_attributes.hero_description.addClass('grandrestaurant-hero__description')}}>
+                        {{ content.hero_description }}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grandrestaurant-hero__svg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 20" fill="#fff" preserveAspectRatio="none">
+            <path d="M0,0v3c0,0,393.8,0,483.4,0c9.2,0,16.6,7.4,16.6,16.6c0-9.1,7.4-16.6,16.6-16.6C606.2,3,1000,3,1000,3V0H0z"></path>
+        </svg>
+    </div>
+</div>
+{% endif %}

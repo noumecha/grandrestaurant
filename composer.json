@@ -1,0 +1,16 @@
+{
+    "name": "noumecha/grandrestaurant",
+    "description": "\"Another drupal module\"",
+    "type": "drupal-custom-module",
+    "require": {
+        "stephane888/formatage_models": "dev-3x"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "noumecha spaker",
+            "email": "noumechaivan@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
