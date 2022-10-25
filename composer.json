@@ -3,7 +3,7 @@
     "description": "\"Another drupal module\"",
     "type": "drupal-custom-module",
     "require": {
-        "stephane888/formatage_models": "dev-3x || ^3.1"
+        "stephane888/formatage_models": "dev-3x | ^3.1"
     },
     "license": "MIT",
     "authors": [
