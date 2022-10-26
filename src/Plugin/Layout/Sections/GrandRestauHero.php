@@ -30,6 +30,12 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *     "hero_bg_image" = {
  *       "label" = @Translation("hero_bg_image"),
  *     },
+ *     "hero_actions_link" = {
+ *       "label" = @Translation("hero_actions_link"),
+ *     },
+ *     "hero_actions_text" = {
+ *       "label" = @Translation("hero_actions_text"),
+ *     },
  *   }
  * )
  */
@@ -72,6 +78,12 @@ class GrandRestauHero extends FormatageModelsSection {
                 'value' => 'select',
                 'options' => [
                     'grandrestaurant-hero--top' => 'top-svg',
+                    'grandrestaurant-hero--middle-svg-bottom' => 'mmiddle-svg-bottom',
+                    'grandrestaurant-hero--middle-svg-top' => 'middle-svg-top',
+                    'grandrestaurant-hero--top-no-desc' => 'no-desc',
+                    'grandrestaurant-hero--middle-no-svg' => 'no-svg',
+                    'grandrestaurant-hero--middle-actions-top' => 'middle-actions-top',
+                    'grandrestaurant-hero--middle-actions-bottom' => 'middle-actions-bottom',
                 ]
             ],
             'infos' => [
@@ -98,6 +110,26 @@ class GrandRestauHero extends FormatageModelsSection {
                             'label' => 'Description',
                             'value' => 'MAKING THE DELICIOUS PREMIUM FOOD SINCE 1990
                             BOOK ONLINE OR CALL (1800)456-6743'
+                        ]
+                    ],
+                    'hero_actions_link' => [
+                        'url' => [
+                            'label' => 'action link',
+                            'value' => [
+                                'class' => 'actions_link',
+                                'text' => 'Make an Online Reservation',
+                                'href' => '#',
+                            ]
+                        ]
+                    ],
+                    'hero_actions_text' => [
+                        'url' => [
+                            'label' => 'action text',
+                            'value' => [
+                                'class' => 'actions_text',
+                                'text' => 'or call us +237 696 879 475',
+                                'href' => '#',
+                            ]
                         ]
                     ],
                     'hero_bg_image' => [

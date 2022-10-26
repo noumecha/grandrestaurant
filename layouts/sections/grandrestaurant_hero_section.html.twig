@@ -8,7 +8,7 @@
 <div {{ attributes.addClass('grandrestaurant-hero')}}>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-8 simple">
                 <div class="grandrestaurant-hero__subtitle_cont">
                     {% if content.hero_subtitle %}
                     <h2 {{ region_attributes.hero_subtitle.addClass(['grandrestaurant-hero__subtitle','h2'])}}>
@@ -29,6 +29,45 @@
                         {{ content.hero_description }}
                     </div>
                     {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="middle">
+                    <div class="grandrestaurant-hero__actions">
+                        {% if content.hero_actions_link %}
+                            {% for item in content.hero_actions_link|array_elements(region_attributes.hero_actions_link.addClass('')) %}
+                                {{ item }}
+                            {% endfor %}
+                        {% endif %}
+                        {% if content.hero_actions_text %}
+                            {% for item in content.hero_actions_text|array_elements(region_attributes.hero_actions_text.addClass('')) %}
+                                {{ item }}
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="grandrestaurant-hero__subtitle_cont">
+                        {% if content.hero_subtitle %}
+                        <h2 {{ region_attributes.hero_subtitle.addClass(['grandrestaurant-hero__subtitle','h2'])}}>
+                            {{ content.hero_subtitle }}
+                        </h2>
+                        {% endif %}
+                    </div>
+                    <div class="grandrestaurant-hero__subtitle_cont">
+                        {% if content.hero_title %}
+                        <h1 {{ region_attributes.hero_title.addClass(['grandrestaurant-hero__title','h1'])}}>
+                            {{ content.hero_title }}
+                        </h1>
+                        {% endif %}
+                    </div>
+                    <div class="grandrestaurant-hero__subtitle_cont">
+                        {% if content.hero_description %}
+                        <div {{ region_attributes.hero_description.addClass('grandrestaurant-hero__description')}}>
+                            {{ content.hero_description }}
+                        </div>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
         </div>
