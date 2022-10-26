@@ -1,0 +1,143 @@
+{% if content %}
+<footer {{ attributes.addClass('grandrestaurant-footer')}}>
+    <div class="grandrestaurant-footer__svg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 20" fill="#fff" preserveAspectRatio="none">
+            <path d="M0,0v3c0,0,393.8,0,483.4,0c9.2,0,16.6,7.4,16.6,16.6c0-9.1,7.4-16.6,16.6-16.6C606.2,3,1000,3,1000,3V0H0z"></path>
+        </svg>
+    </div>
+    <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="footer-col">
+                        {% if content.footer_title_one %}
+                        <div {{ region_attributes.footer_title_one.addClass('footer-col__logo')}}>
+                            {{ content.footer_title_one }}
+                        </div>
+                        {% endif %}
+                        {% if content.footer_text %}
+                        <div {{ region_attributes.footer_text.addClass('footer-col__description')}}>
+                            {{ content.footer_text }}
+                        </div>
+                        {% endif %}
+                        {% if content.footer_icons %}
+                        <div {{ region_attributes.footer_icons.addClass('footer-col__socials')}}>
+                            {{ content.footer_icons }}
+                            {#% for item in content.footer_icons|array_elements(region_attributes.footer_icons.addClass('footer-col__socials_link')) %}
+                                {{ item }}
+                            {% endfor %#}
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-6 col-xs-12">
+                    <div class="footer-col">
+                        <div class="row">
+                            <div class="col-6">
+                                {% if content.footer_title_two %}
+                                <h3 {{ region_attributes.footer_title_two.addClass(['footer-col__logo','h3'])}}>
+                                    {{ content.footer_title_two }}
+                                </h3>
+                                {% endif %}
+                                <div class="footer-col__links">
+                                    {% if content.footer_menu_one %}
+                                    <div {{ region_attributes.footer_menu_one.addClass('elements')}}>
+                                        {{ content.footer_menu_one }}
+                                        {#% for item in content.footer_menu_two|array_elements(region_attributes.footer_menu_two.addClass('element')) %}
+                                            {{ item }}
+                                        {% endfor %#}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                {% if content.footer_title_three %}
+                                <h3 {{ region_attributes.footer_title_three.addClass(['footer-col__logo','h3'])}}>
+                                    {{ content.footer_title_three }}
+                                </h3>
+                                {% endif %}
+                                <div class="footer-col__links">
+                                    {% if content.footer_menu_two %}
+                                    <div {{ region_attributes.footer_menu_two.addClass('elements')}}>
+                                        {{ content.footer_menu_two }}
+                                        {#% for item in content.footer_menu_two|array_elements(region_attributes.footer_menu_two.addClass('element')) %}
+                                            {{ item }}
+                                        {% endfor %#}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="footer-col">
+                        {% if content.footer_title_four %}
+                        <h3 {{ region_attributes.footer_title_four.addClass(['footer-col__logo','h3'])}}>
+                            {{ content.footer_title_four }}
+                        </h3>
+                        {% endif %}
+                        <div class="footer-col__links">
+                            {% if content.footer_menu_three %}
+                            <div {{ region_attributes.footer_menu_three.addClass('elements')}}>
+                                {{ content.footer_menu_three }}
+                                {#<ul>
+                                    {#% for item in content.footer_menu_three|array_elements(region_attributes.footer_menu_three.addClass('element')) %}
+                                        {{ item }}
+                                    {% endfor %
+                                </ul>#}
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-5">
+                    <div class="footer-col">
+                        {% if content.footer_title_five %}
+                        <h3 {{ region_attributes.footer_title_five.addClass(['footer-col__logo','h3'])}}>
+                            {{ content.footer_title_five }}
+                        </h3>
+                        {% endif %}
+                        <div class="footer-col__links">
+                            {% if content.footer_menu_four %}
+                            <div {{ region_attributes.footer_menu_four.addClass('elements')}}>
+                                {{ content.footer_menu_four }}
+                                {#<ul>
+                                    {#% for item in content.footer_menu_three|array_elements(region_attributes.footer_menu_three.addClass('element')) %}
+                                        {{ item }}
+                                    {% endfor %
+                                </ul>#}
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="grandrestaurant-footer__two">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xs-12">
+                    {% if content.footer_text_copy %}
+                    <div {{ region_attributes.footer_text_copy.addClass('grandrestaurant-footer__two_text')}} class="">
+                        {{ content.footer_text_copy }}
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="col-lg-6 col-xs-12">
+                    <div class="grandrestaurant-footer__two_links">
+                        {% if content.footer_menu_five %}
+                        <div{{ region_attributes.footer_menu_five.addClass('elements')}}>
+                            {{ content.footer_menu_five }}
+                            {#% for item in content.footer_menu_five|array_elements(region_attributes.footer_menu_five.addClass('element')) %}
+                                {{ item }}
+                            {% endfor %#}
+                        </div>
+                        {% endif %}
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endif %}
