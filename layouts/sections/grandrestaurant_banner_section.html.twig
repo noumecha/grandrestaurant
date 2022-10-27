@@ -1,0 +1,32 @@
+{% if content %}
+<div {{ attributes.addClass('grandrestaurant-banner')}}>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                {% if content.banner_title %}
+                <h3 {{ region_attributes.banner_title.addClass(['grandrestaurant-banner__title','h3'])}}>
+                    {{ content.banner_title }}
+                </h3>
+                {% endif %}
+                {% if content.banner_subtitle %}
+                <h4 {{ region_attributes.banner_subtitle.addClass(['grandrestaurant-banner__subtitle','h4'])}}>
+                    {{ content.banner_subtitle }}
+                </h4>
+                {% endif %}
+                {% if content.banner_author %}
+                <h6 {{ region_attributes.banner_author.addClass(['grandrestaurant-banner__author','h6'])}}>
+                    {{ content.banner_author }}
+                </h6>
+                {% endif %}
+                {% if content.banner_teaser %}
+                <div class="grandrestaurant-banner__teaser">
+                    {% for item in content.banner_teaser|array_elements(region_attributes.banner_teaser.addClass('')) %}
+                        {{ item }}
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
