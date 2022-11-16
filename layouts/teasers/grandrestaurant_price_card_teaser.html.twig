@@ -1,0 +1,36 @@
+{% if content %}
+<div {{ attributes.addClass('grandrestaurant-price-card')}}>
+    <div class="grandrestaurant-price-card__image">
+        {% if content.price_card_image %}
+        <div {{ region_attributes.price_card_image.addClass('')}} >
+            {{ content.price_card_image }}
+        </div>
+        {% endif %}
+        <div class="grandrestaurant-price-card__image_icon">
+            {% if content.price_card_icone %}
+            <div {{ region_attributes.price_card_icone.addClass('grandrestaurant-price-card__image_icon_linker')}}>
+                    {{ content.price_card_icone }}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="grandrestaurant-price-card__info">
+        <div class="grandrestaurant-price-card__info_generic">
+            {% if content.price_card_title %}
+            <h5 {{ region_attributes.price_card_title.addClass(['grandrestaurant-price-card__info_generic_title','h5'])}}>
+                {{ content.price_card_title }}
+            </h5>
+            {% endif %}
+            {% if content.price_card_compo %}
+            <div {{ region_attributes.price_card_compo.addClass(['grandrestaurant-price-card__info_generic_compo','h6'])}}>
+                {{ content.price_card_compo }}
+            </div>
+            {% endif %}
+        </div>
+        {% if content.price_card_price %}
+        <h5 {{ region_attributes.price_card_price.addClass(['grandrestaurant-price-card__info_price','h5']) }}>
+            {{ content.price_card_price }}
+        </h5>
+    </div>
+</div>
+{% endif %}
