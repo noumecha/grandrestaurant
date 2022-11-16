@@ -1,0 +1,42 @@
+{% if content %}
+<div {{ attributes.addClass(['grandrestaurant-card-teaser','row'])}}>
+    <div class="col-lg-7 grandrestaurant-card-teaser__imgs">
+        {% if content.card_teaser_image %}
+            {% for item in content.card_teaser_image|array_elements(region_attributes.card_teaser_image.addClass('grandrestaurant-card-teaser__imgs_single')) %}
+                {{ item }}
+            {% endfor %}
+        {% endif %}
+    </div>
+    <div class="col-lg-5 grandrestaurant-card-teaser__visit">
+        <div class="grandrestaurant-card-teaser__visit_title">
+            {% if content.card_teaser_title %}
+            <h2 {{ region_attributes.card_teaser_title.addClass(['grandrestaurant-card-teaser__visit_title_first','h2'])}}>
+                {{ content.card_teaser_title }}
+            </h2>
+            {% endif %}
+            {% if content.card_teaser_title_two %}
+            <h2 {{ region_attributes.card_teaser_title_two.addClass(['grandrestaurant-card-teaser__visit_title_second','h2'])}}>
+                {{ content.card_teaser_title_two }}
+            </h2>
+            {% endif %}
+        </div>
+        {% if content.card_teaser_icone %}
+        <div {{ region_attributes.card_teaser_icone.addClass('grandrestaurant-card-teaser__visit_icone')}}>
+            {{ content.card_teaser_icone }}
+        </div>
+        {% endif %}
+        {% if content.card_teaser_desc %}
+        <div {{ region_attributes.card_teaser_desc.addClass('grandrestaurant-card-teaser__visit_text')}}>
+            {{ content.card_teaser_desc }}
+        </div>
+        {% endif %}
+        <div class="grandrestaurant-card-teaser__visit_link">
+            {% if content.card_teaser_link %}
+                {% for item in content.card_teaser_link|array_elements(region_attributes.card_teaser_link.addClass('')) %}
+                    {{ item }}
+                {% endfor %}
+            {% endif %}
+        </div>           
+    </div>
+</div>
+{% endif %}

@@ -12,7 +12,7 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  * @Layout(
  *   id = "grandrestaurant_chief_teaser",
  *   label = @Translation(" Grand Restaurant : Chief Teaser "),
- *   category = @Translation("mit_models"),
+ *   category = @Translation("grandrestaurant"),
  *   path = "layouts/teasers",
  *   template = "grandrestaurant_chief_teaser",
  *   library = "mit_models/grandrestaurant_chief_teaser",
@@ -39,7 +39,7 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  *   }
  * )
  */
-class MitModelsAchievmentsTeaser extends FormatageModelsTeasers {
+class GrandRestauCardTeaser extends FormatageModelsTeasers {
   
     /**
     *
