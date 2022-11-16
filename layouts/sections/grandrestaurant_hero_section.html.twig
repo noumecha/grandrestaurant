@@ -70,6 +70,37 @@
                     </div>
                 </div>
             </div>
+            {# with the card teaser #}
+            <div class="col-lg-5 grandrestaurant-hero__card">
+                <div class="grandrestaurant-hero__card_title">
+                    {% if content.hero_card_title %}
+                    <h2 {{ region_attributes.hero_card_title.addClass(['grandrestaurant-hero__card_title_first','h2'])}}>
+                        {{ content.hero_card_title }}
+                    </h2>
+                    {% endif %}
+                    {% if content.hero_card_title_two %}
+                    <h2 {{ region_attributes.hero_card_title_two.addClass(['grandrestaurant-hero__card_title_second','h2']) }}>
+                        {{ content.hero_card_title_two }}
+                    </h2>
+                </div> 
+                {% if content.hero_card_icon %}
+                <div {{ region_attributes.hero_card_icon.addClass('grandrestaurant-hero__visit_icon')}}>
+                    {{ content.hero_card_icon }}
+                </div>
+                {% endif %}
+                {% if content.hero_card_desc %}
+                <div {{ region_attributes.hero_card_desc.addClass('grandrestaurant-hero__card_text')}}>
+                    {{ content.hero_card_desc }}
+                </div>
+                {% endif %}
+                <div class="grandrestaurant-hero__card_link">
+                    {% if content.hero_card_link %}
+                        {% for item in content.hero_card_link|array_elements(region_attributes.hero_card_link.addClass('')) %}
+                            {{ item }}
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
         </div>
     </div>
     <div class="grandrestaurant-hero__svg">
