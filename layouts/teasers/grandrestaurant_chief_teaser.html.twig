@@ -1,0 +1,34 @@
+{% if content %}
+<div {{ attributes.addClass('grandrestaurant-chief-card')}}>
+    {% if content.chief_title %}
+    <h3 {{ region_attributes.chief_title.addClass(['grandrestaurant-chief-card__title','h3'])}}>
+        {{ content.chief_title }}
+    </h3>
+    {% endif %}
+    {% if content.chief_image %}
+    <div {{ region_attributes.chief_image.addClass('grandrestaurant-chief-card__img')}}>
+        {{ content.chief_image }}
+    </div>
+    {% endif %}
+    {% if content.chief_post %}
+    <div {{ region_attributes.chief_post.addClass('grandrestaurant-chief-card__post')}}>
+        {{ content.chief_post }}
+    </div>
+    {% endif %}
+    {% if content.chief_name %}
+    <h4 {{ region_attributes.chief_name.addClass(['grandrestaurant-chief-card__name','h4'])}}>
+        {{ content.chief_name }}
+    </h4>
+    {% endif %}
+    {% if content.chief_desc %}
+    <div {{ region_attributes.chief_desc.addClass('grandrestaurant-chief-card__desc')}}>
+        {{ content.chief_desc }}
+    </div>
+    {% endif %}
+    {% if content.chief_signature %}
+    <h3 {{ region_attributes.chief_signature.addClass(['grandrestaurant-chief-card__signature','h3','font-family-2'])}}>
+        {{ content.chief_signature }}
+    </h3>
+    {% endif %}
+</div>
+{% endif %}
