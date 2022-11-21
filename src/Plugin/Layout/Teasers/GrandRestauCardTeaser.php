@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\mit_models\Plugin\Layout\Teasers;
+namespace Drupal\grandrestaurant\Plugin\Layout\Teasers;
 
 use Drupal\bootstrap_styles\StylesGroup\StylesGroupManager;
 use Drupal\formatage_models\FormatageModelsThemes;
@@ -15,7 +15,7 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  *   category = @Translation("grandrestaurant"),
  *   path = "layouts/teasers",
  *   template = "grandrestaurant_card_teaser",
- *   library = "mit_models/grandrestaurant_card_teaser",
+ *   library = "grandrestaurant/grandrestaurant_card_teaser",
  *   default_region = "card_teaser_image",
  *   regions = {
  *     "card_teaser_image" = {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\mit_models\Plugin\Layout\Teasers;
+namespace Drupal\grandrestaurant\Plugin\Layout\Teasers;
 
 use Drupal\bootstrap_styles\StylesGroup\StylesGroupManager;
 use Drupal\formatage_models\FormatageModelsThemes;
@@ -15,7 +15,7 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  *   category = @Translation("grandrestaurant"),
  *   path = "layouts/teasers",
  *   template = "grandrestaurant_price_card_teaser",
- *   library = "mit_models/grandrestaurant_price_card_teaser",
+ *   library = "grandrestaurant/grandrestaurant_price_card_teaser",
  *   default_region = "price_card_image",
  *   regions = {
  *     "price_card_image" = {
@@ -71,9 +71,8 @@ class GrandRestauPriceCardTeaser extends FormatageModelsTeasers {
             'derivate' => [
                 'value' => 'select',
                 'options' => [
-                    'grandrestaurant-card-teaser--four' => 'four-image',
-                    'grandrestaurant-card-teaser--reverse' => 'reverse',
-                    'grandrestaurant-card-teaser--reverse grandrestaurant-card-teaser--four'=> 'four-image-revese',
+                    'grandrestaurant-price-card--hover' => 'hover-bg',
+                    'grandrestaurant-price-card--blog' => 'blog',
                 ]
             ],
             'infos' => [
