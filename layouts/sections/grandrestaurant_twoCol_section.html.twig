@@ -1,5 +1,5 @@
 {% if content %}
-    <div {{ region_attributes.addClass('container')}} >
+    <div {{ attributes.addClass('container')}} >
         <div class="row">
             {% if content.col_one %}
             <div {{ region_attributes.col_one.addClass('col-lg-7')}}>
@@ -7,7 +7,7 @@
             </div>
             {% endif %}
             {% if content.col_two %}
-            <div {{ region_attributes.col_two.addClass('col-lg-7')}}>
+            <div {{ region_attributes.col_two.addClass('col-lg-5')}}>
                 {{ content.col_two }}
             </div>
             {% endif %}

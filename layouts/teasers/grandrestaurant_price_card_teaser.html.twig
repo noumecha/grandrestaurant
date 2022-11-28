@@ -1,6 +1,18 @@
 {% if content %}
 <div {{ attributes.addClass('grandrestaurant-price-card')}}>
     <div class="grandrestaurant-price-card__image">
+    <div class="grandrestaurant-price-card__image_date">
+        {% if content.price_card_day %}
+        <div {{ region_attributes.price_card_day.addClass('grandrestaurant-price-card__image_date_day')}}>
+            {{ content.price_card_day }}
+        </div>
+        {% endif %}
+        {% if content.price_card_month %}
+        <div {{ region_attributes.price_card_month.addClass('grandrestaurant-price-card__image_date_month')}}>
+            {{ content.price_card_month }}
+        </div>
+        {% endif %}
+        </div>
         {% if content.price_card_image %}
         <div {{ region_attributes.price_card_image.addClass('')}} >
             {{ content.price_card_image }}
@@ -21,6 +33,11 @@
                 {{ content.price_card_title }}
             </h5>
             {% endif %}
+            {% if content.price_card_desc %}
+            <div {{ region_attributes.price_card_desc.addClass('grandrestaurant-price-card__info_desc')}}>
+                {{ content.price_card_desc }}
+            </div>
+            {% endif %}
             {% if content.price_card_compo %}
             <div {{ region_attributes.price_card_compo.addClass(['grandrestaurant-price-card__info_generic_compo','h6'])}}>
                 {{ content.price_card_compo }}
@@ -32,6 +49,16 @@
             {{ content.price_card_price }}
         </h5>
         {% endif %}
+    </div>
+    <div class="grandrestaurant-price-card__link">
+        {% if content.price_card_link %}
+            {% for item in content.price_card_link|array_elements(region_attributes.price_card_link.addClass('')) %}
+                {{ item }}
+            {% endfor %}
+        {% endif %}
+        <div class="grandrestaurant-price-card__link_icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="2rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 4l8 8l-8 8"/></svg>
+        </div>
     </div>
 </div>
 {% endif %}

@@ -62,12 +62,6 @@ class GrandRestauTwoCol extends FormatageModelsSection {
         return [
             'load_libray' => true,
             'region_tag_title' => 'h1',
-            'derivate' => [
-                'value' => 'select',
-                'options' => [
-                    'grandrestaurant-footer--no-svg' => 'no-svg',
-                ]
-            ],
             'infos' => [
                 'builder-form' => true,
                 'info' => [

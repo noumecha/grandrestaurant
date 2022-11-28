@@ -33,6 +33,18 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  *     "price_card_price" = {
  *       "label" = @Translation("price_card_price"),
  *     },
+ *     "price_card_day" = {
+ *       "label" = @Translation("price_card_day"),
+ *     },
+ *     "price_card_month" = {
+ *       "label" = @Translation("price_card_month"),
+ *     },
+ *     "price_card_desc" = {
+ *       "label" = @Translation("price_card_desc"),
+ *     },
+ *     "price_card_link" = {
+ *       "label" = @Translation("price_card_link"),
+ *     },
  *   }
  * )
  */
@@ -110,6 +122,34 @@ class GrandRestauPriceCardTeaser extends FormatageModelsTeasers {
                         'text_html' => [
                             'label' => 'Price',
                             'value' => '$12.0'
+                        ]
+                    ],
+                    'price_card_day' => [
+                        'text_html' => [
+                            'label' => 'Day',
+                            'value' => '20'
+                        ]
+                    ],
+                    'price_card_month' => [
+                        'text_html' => [
+                            'label' => 'Month',
+                            'value' => 'July'
+                        ]
+                    ],
+                    'price_card_desc' => [
+                        'text_html' => [
+                            'label' => 'Description',
+                            'value' => 'Lorem ipsum dosectetur adipisicing elit, sed doLorem ipsum dolor sit amet, consectetur...'
+                        ]
+                    ],
+                    'price_card_link' => [
+                        'url' => [
+                            'label' => 'Lien',
+                            'value' => [
+                                'href' => '#',
+                                'class' => 'grandrestaurant-price-card__link_text',
+                                'text' => 'continue reading'
+                            ]
                         ]
                     ]
                 ]
