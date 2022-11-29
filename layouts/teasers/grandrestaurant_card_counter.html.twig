@@ -1,0 +1,17 @@
+{% if content %}
+<pre>
+    {#{ dump(content.card_counter_number|first) }#}
+</pre>
+<div {{ attributes.addClass('grandrestaurant-counter-section_elements')}}>
+    {% if content.card_counter_number %}
+    <div {{ region_attributes.card_counter_number.addClass('grandrestaurant-counter-section_elements_count')}}>
+        {{ content.card_counter_number }}
+    </div>
+    {% endif %}
+    {% if content.card_counter_text %}
+    <div {{ region_attributes.card_counter_text.addClass('grandrestaurant-counter-section_elements_text')}}>
+        {{ content.card_counter_text }}
+    </div>
+    {% endif %}
+</div>
+{% endif %}
