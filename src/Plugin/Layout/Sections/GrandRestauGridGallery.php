@@ -76,8 +76,9 @@ class GrandRestauGridGallery extends FormatageModelsSection {
                 ],
                 'fields' => [
                     'gallery_item' => [
-                        'img' => [
-                            'label' => 'Titre',
+                        'text_html' => [
+                            'label' => 'Image',
+                            'value' => ''
                         ]
                     ],
                 ]
