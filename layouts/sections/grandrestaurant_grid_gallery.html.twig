@@ -1,0 +1,13 @@
+{% if content %}
+<div class="container-fluid">
+    <div class="row">
+        <div {{ attributes.addClass(['grandrestaurant-grid-gallery','col-md-12']) }}>
+            {% if content.gallery_item %}
+                {% for item in content.gallery_item|array_elements(region_attributes.gallery_item.addClass('grid-item')) %}
+                    {{ item }}
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endif %}
