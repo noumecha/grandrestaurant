@@ -89,6 +89,9 @@ class GrandRestauHero extends FormatageModelsSection {
         return [
             'load_libray' => true,
             'region_tag_title' => 'h1',
+            'region_css_hero_subtitle' => 'h2 mb-0',
+            'region_css_hero_title' => 'text-white',
+            'region_css_hero_description' => 'ont-weight-bold text-white text-uppercase text-white',
             'derivate' => [
                 'value' => 'select',
                 'options' => [
@@ -101,6 +104,7 @@ class GrandRestauHero extends FormatageModelsSection {
                     'grandrestaurant-hero--middle-actions-bottom' => 'middle-actions-bottom',
                     'grandrestaurant-hero--card' => 'card',
                     'grandrestaurant-hero--card--reverse' => 'card-reverse',
+                    'grandrestaurant-hero--min-height'  => 'min-height',
                 ]
             ],
             'infos' => [
