@@ -76,9 +76,8 @@ class GrandRestauGridGallery extends FormatageModelsSection {
                 ],
                 'fields' => [
                     'gallery_item' => [
-                        'text_html' => [
+                        'img' => [
                             'label' => 'Titre',
-                            'value' => 'UNTIL I DISCOVERED COOKING I WAS NEVER REALLY INTERESTED IN ANYTHING'
                         ]
                     ],
                 ]
