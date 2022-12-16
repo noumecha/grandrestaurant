@@ -11,9 +11,9 @@
             <div class="col-lg-8 simple">
                 <div class="grandrestaurant-hero__subtitle_cont">
                     {% if content.hero_subtitle %}
-                    <h2 {{ region_attributes.hero_subtitle.addClass(['grandrestaurant-hero__subtitle','h2'])}}>
+                    <h1 {{ region_attributes.hero_subtitle.addClass(['grandrestaurant-hero__subtitle','h1'])}}>
                         {{ content.hero_subtitle|layout_value }}
-                    </h2>
+                    </h1>
                     {% endif %}
                 </div>
                 <div class="grandrestaurant-hero__subtitle_cont">
@@ -25,7 +25,7 @@
                 </div>
                 <div class="grandrestaurant-hero__subtitle_cont">
                     {% if content.hero_description %}
-                    <div {{ region_attributes.hero_description.addClass('grandrestaurant-hero__description')}}>
+                    <div {{ region_attributes.hero_description.addClass(['grandrestaurant-hero__description','h4'])}}>
                         {{ content.hero_description|layout_value }}
                     </div>
                     {% endif %}

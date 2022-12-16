@@ -89,9 +89,9 @@ class GrandRestauHero extends FormatageModelsSection {
         return [
             'load_libray' => true,
             'region_tag_title' => 'h1',
-            'region_css_hero_subtitle' => 'h2 mb-0',
-            'region_css_hero_title' => 'text-white',
-            'region_css_hero_description' => 'font-weight-bold text-white text-uppercase',
+            'region_css_hero_subtitle' => 'h1 mb-0',
+            'region_css_hero_title' => 'h1 text-white',
+            'region_css_hero_description' => 'h4 font-weight-bold text-white text-uppercase',
             'derivate' => [
                 'value' => 'select',
                 'options' => [
