@@ -19,7 +19,7 @@
                 </h4>
                 {% endif %}
                 {% if content.banner_teaser %}
-                <div class="grandrestaurant-banner__teaser">
+                <div class="grandrestaurant-banner__teaser d-flex">
                     {% for item in content.banner_teaser|array_elements(region_attributes.banner_teaser.addClass('')) %}
                         {{ item }}
                     {% endfor %}
