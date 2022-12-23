@@ -68,6 +68,8 @@ class GrandRestauBanner extends FormatageModelsSection {
         return [
             'load_libray' => true,
             'region_tag_title' => 'h1',
+            'region_css_banner_title' => 'h1',
+            'region_css_banner_subtitle' => 'h2',
             'region_css_banner_author' => 'h4',
             'derivate' => [
                 'value' => 'select',

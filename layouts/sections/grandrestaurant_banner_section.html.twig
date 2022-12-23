@@ -4,14 +4,14 @@
         <div class="row">
             <div class="col-lg-12">
                 {% if content.banner_title %}
-                <h3 {{ region_attributes.banner_title.addClass(['grandrestaurant-banner__title','h3'])}}>
+                <h1 {{ region_attributes.banner_title.addClass(['grandrestaurant-banner__title','h1'])}}>
                     {{ content.banner_title }}
-                </h3>
+                </h1>
                 {% endif %}
                 {% if content.banner_subtitle %}
-                <h4 {{ region_attributes.banner_subtitle.addClass(['grandrestaurant-banner__subtitle','h4'])}}>
+                <h2 {{ region_attributes.banner_subtitle.addClass(['grandrestaurant-banner__subtitle','h2'])}}>
                     {{ content.banner_subtitle }}
-                </h4>
+                </h2>
                 {% endif %}
                 {% if content.banner_author %}
                 <h4 {{ region_attributes.banner_author.addClass(['grandrestaurant-banner__author','h4'])}}>
