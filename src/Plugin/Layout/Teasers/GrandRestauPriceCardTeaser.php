@@ -85,6 +85,7 @@ class GrandRestauPriceCardTeaser extends FormatageModelsTeasers {
                 'options' => [
                     'grandrestaurant-price-card--hover' => 'hover-bg',
                     'grandrestaurant-price-card--blog' => 'blog',
+                    'grandrestaurant-price-card--only-icon-hover' => 'only-icon-hover',
                 ]
             ],
             'infos' => [
