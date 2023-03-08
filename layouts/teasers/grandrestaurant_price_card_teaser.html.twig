@@ -29,14 +29,14 @@
     <div class="grandrestaurant-price-card__info">
         <div class="grandrestaurant-price-card__info_generic">
             {% if content.price_card_title %}
-            <h5 {{ region_attributes.price_card_title.addClass(['grandrestaurant-price-card__info_generic_title','h5'])}}>
+            <h3 {{ region_attributes.price_card_title.addClass(['grandrestaurant-price-card__info_generic_title','h3'])}}>
                 {{ content.price_card_title }}
-            </h5>
+            </h3>
             {% endif %}
             {% if content.price_card_desc %}
-            <div {{ region_attributes.price_card_desc.addClass('grandrestaurant-price-card__info_desc')}}>
+            <h4 {{ region_attributes.price_card_desc.addClass(['grandrestaurant-price-card__info_desc','h4'])}}>
                 {{ content.price_card_desc }}
-            </div>
+            </h4>
             {% endif %}
             {% if content.price_card_compo %}
             <div {{ region_attributes.price_card_compo.addClass(['grandrestaurant-price-card__info_generic_compo','h6'])}}>
