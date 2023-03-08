@@ -67,7 +67,7 @@ class GrandRestauHero extends FormatageModelsSection {
         parent::__construct($configuration, $plugin_id, $plugin_definition, $styles_group_manager);
         $this->pluginDefinition->set('icon', drupal_get_path('module', 'grandrestaurant') . "/icones/sections/grandrestaurant_hero_section.png");
     }
-    
+
     /**
      *
      * {@inheritdoc}
@@ -79,17 +79,17 @@ class GrandRestauHero extends FormatageModelsSection {
         FormatageModelsThemes::formatSettingValues($build);
         return $build;
     }
-    
+
     /**
-     * 
+     *
      * {@inheritdoc}
-     * 
+     *
      */
     function defaultConfiguration() {
         return [
             'load_libray' => true,
             'region_tag_title' => 'h1',
-            'region_css_hero_subtitle' => 'h1 mb-0',
+            'region_css_hero_subtitle' => 'h2 mb-0',
             'region_css_hero_title' => 'h1 text-white',
             'region_css_hero_description' => 'h4 font-weight-bold text-white text-uppercase',
             'derivate' => [
@@ -105,6 +105,7 @@ class GrandRestauHero extends FormatageModelsSection {
                     'grandrestaurant-hero--card' => 'card',
                     'grandrestaurant-hero--card--reverse' => 'card-reverse',
                     'grandrestaurant-hero--min-height'  => 'min-height',
+                    'grandrestaurant-hero--min-height grandrestaurant-hero--middle-svg-top'  => 'min-height-center-svg-top',
                 ]
             ],
             'infos' => [

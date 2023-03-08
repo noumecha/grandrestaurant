@@ -11,14 +11,14 @@
             <div class="col-lg-8 simple">
                 <div class="grandrestaurant-hero__subtitle_cont">
                     {% if content.hero_subtitle %}
-                    <h1 {{ region_attributes.hero_subtitle.addClass(['grandrestaurant-hero__subtitle','h1'])}}>
+                    <h1 {{ region_attributes.hero_subtitle.addClass(['grandrestaurant-hero__subtitle'])}}>
                         {{ content.hero_subtitle|layout_value }}
                     </h1>
                     {% endif %}
                 </div>
                 <div class="grandrestaurant-hero__subtitle_cont">
                     {% if content.hero_title %}
-                    <h1 {{ region_attributes.hero_title.addClass(['grandrestaurant-hero__title','h1'])}}>
+                    <h1 {{ region_attributes.hero_title.addClass(['grandrestaurant-hero__title'])}}>
                         {{ content.hero_title|layout_value }}
                     </h1>
                     {% endif %}
@@ -49,14 +49,14 @@
                     </div>
                     <div class="grandrestaurant-hero__subtitle_cont">
                         {% if content.hero_subtitle %}
-                        <h2 {{ region_attributes.hero_subtitle.addClass(['grandrestaurant-hero__subtitle','h2'])}}>
+                        <h2 {{ region_attributes.hero_subtitle.addClass(['grandrestaurant-hero__subtitle'])}}>
                             {{ content.hero_subtitle|layout_value }}
                         </h2>
                         {% endif %}
                     </div>
                     <div class="grandrestaurant-hero__subtitle_cont">
                         {% if content.hero_title %}
-                        <h1 {{ region_attributes.hero_title.addClass(['grandrestaurant-hero__title','h1'])}}>
+                        <h1 {{ region_attributes.hero_title.addClass(['grandrestaurant-hero__title'])}}>
                             {{ content.hero_title|layout_value }}
                         </h1>
                         {% endif %}
@@ -83,7 +83,7 @@
                         {{ content.hero_card_title_two }}
                     </h2>
                     {% endif %}
-                </div> 
+                </div>
                 {% if content.hero_card_icon %}
                 <div {{ region_attributes.hero_card_icon.addClass('grandrestaurant-hero__visit_icon')}}>
                     {{ content.hero_card_icon }}
