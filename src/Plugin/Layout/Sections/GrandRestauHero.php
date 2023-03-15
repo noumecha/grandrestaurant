@@ -96,7 +96,7 @@ class GrandRestauHero extends FormatageModelsSection {
                 'value' => 'select',
                 'options' => [
                     'grandrestaurant-hero--top' => 'top-svg',
-                    'grandrestaurant-hero--middle-svg-bottom' => 'mmiddle-svg-bottom',
+                    'grandrestaurant-hero--middle-svg-bottom' => 'middle-svg-bottom',
                     'grandrestaurant-hero--middle-svg-top' => 'middle-svg-top',
                     'grandrestaurant-hero--top-no-desc' => 'no-desc',
                     'grandrestaurant-hero--middle-no-svg' => 'no-svg',
