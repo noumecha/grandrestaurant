@@ -73,7 +73,7 @@ class GrandRestauFooter extends FormatageModelsSection {
         parent::__construct($configuration, $plugin_id, $plugin_definition, $styles_group_manager);
         $this->pluginDefinition->set('icon', drupal_get_path('module', 'grandrestaurant') . "/icones/sections/grandrestaurant_footer_section.png");
     }
-    
+
     /**
      *
      * {@inheritdoc}
@@ -85,16 +85,23 @@ class GrandRestauFooter extends FormatageModelsSection {
         FormatageModelsThemes::formatSettingValues($build);
         return $build;
     }
-    
+
     /**
-     * 
+     *
      * {@inheritdoc}
-     * 
+     *
      */
     function defaultConfiguration() {
         return [
             'load_libray' => true,
             'region_tag_title' => 'h1',
+            'region_css_footer_text_copy' => 'text-white',
+            'region_css_footer_title_five' => 'text-white',
+            'region_css_footer_title_four' => 'text-white',
+            'region_css_footer_title_three' => 'text-white',
+            'region_css_footer_title_two' => 'text-white',
+            'region_css_footer_title_one' => 'text-white',
+            'region_css_footer_text' => 'text-white',
             'derivate' => [
                 'value' => 'select',
                 'options' => [
@@ -149,7 +156,7 @@ class GrandRestauFooter extends FormatageModelsSection {
                             'label' => 'Menu 1',
                             'value' => '<li class="element">
                             <a href="#" class="element__link">
-                                Home 
+                                Home
                             </a>
                         </li>
                         <li class="element">
@@ -269,7 +276,7 @@ class GrandRestauFooter extends FormatageModelsSection {
                             'label' => 'Menu 5',
                             'value' => '<li class="element">
                             <a href="#" class="element__link">
-                            About Us 
+                            About Us
                             </a>
                         </li>
                         <li class="element">
