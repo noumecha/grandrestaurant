@@ -25,7 +25,7 @@
                 </div>
                 <div class="grandrestaurant-hero__subtitle_cont">
                     {% if content.hero_description %}
-                    <div {{ region_attributes.hero_description.addClass(['grandrestaurant-hero__description','h4'])}}>
+                    <div {{ region_attributes.hero_description.addClass(['grandrestaurant-hero__description'])}}>
                         {{ content.hero_description|layout_value }}
                     </div>
                     {% endif %}
@@ -74,12 +74,12 @@
             <div class="col-lg-5 grandrestaurant-hero__card">
                 <div class="grandrestaurant-hero__card_title">
                     {% if content.hero_card_title %}
-                    <h2 {{ region_attributes.hero_card_title.addClass(['grandrestaurant-hero__card_title_first','h2'])}}>
+                    <h2 {{ region_attributes.hero_card_title.addClass(['grandrestaurant-hero__card_title_first'])}}>
                         {{ content.hero_card_title }}
                     </h2>
                     {% endif %}
                     {% if content.hero_card_title_two %}
-                    <h2 {{ region_attributes.hero_card_title_two.addClass(['grandrestaurant-hero__card_title_second','h2']) }}>
+                    <h2 {{ region_attributes.hero_card_title_two.addClass(['grandrestaurant-hero__card_title_second']) }}>
                         {{ content.hero_card_title_two }}
                     </h2>
                     {% endif %}
