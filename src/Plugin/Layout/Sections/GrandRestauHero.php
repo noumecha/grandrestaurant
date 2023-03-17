@@ -105,6 +105,7 @@ class GrandRestauHero extends FormatageModelsSection {
                     'grandrestaurant-hero--card' => 'card',
                     'grandrestaurant-hero--card--reverse' => 'card-reverse',
                     'grandrestaurant-hero--min-height'  => 'min-height',
+                    'grandrestaurant-hero--min-height-fixed'  => 'min-height-attached',
                     'grandrestaurant-hero--min-height grandrestaurant-hero--middle-svg-top'  => 'min-height-center-svg-top',
                 ]
             ],
